@@ -1,0 +1,27 @@
+{
+  "name": "MAL",
+  "version": "0.0.1",
+  "description": "A personal MAL site",
+  "main": "index.js",
+  "repository": {},
+  "author": "Julien Vincent <julienlucvincent@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "build": "next build",
+    "deploy": "now && now alias"
+  },
+  "now": {
+    "alias": "anime.julienvincent.io"
+  },
+  "dependencies": {
+    "next": "^2.4.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.46.0",
+    "now": "^5.3.1"
+  }
+}
