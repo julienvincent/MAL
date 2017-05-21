@@ -1,21 +1,26 @@
 {
-  "name": "MAL",
+  "name": "mal",
   "version": "0.0.1",
   "description": "A personal MAL site",
   "main": "index.js",
-  "repository": {},
-  "author": "Julien Vincent <julienlucvincent@gmail.com>",
+  "repository": "https://github.com/julienvincent/MAL.git",
+  "author": "Julien Vincent",
   "license": "MIT",
+  "engines": {
+    "node": "7.10.0"
+  },
   "scripts": {
-    "dev": "next",
-    "start": "next start",
+    "start": "node server.js",
     "build": "next build",
     "deploy": "now && now alias"
   },
   "now": {
-    "alias": "anime.julienvincent.io"
+    "alias": "anime.julienvincent.io",
+    "dotenv": ".env.prod"
   },
   "dependencies": {
+    "jsonwebtoken": "^7.4.1",
+    "lodash": "^4.17.4",
     "next": "^2.4.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
