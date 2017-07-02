@@ -2,10 +2,7 @@ const auth = require("./auth")
 const state = require("./state")
 const _ = require("lodash")
 
-const responders = {
-	...auth,
-	...state
-}
+const responders = Object.assign({}, auth, state)
 
 const dispatch = async ({action, viewer}) => {
 	const responder = _.find(responders, (responder, type) => type == action.type)
